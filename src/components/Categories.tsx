@@ -3,8 +3,8 @@ import { Card } from "./Card";
 
 export function Categories() {
   return (
-    <div className="bg-[#f5f5f5] text-black p-10 min-h-screen ">
-      <h1 className="text-2xl text-center font-bold mb-4">
+    <div className="bg-[#f5f5f5] text-black p-10">
+      <h1 className="text-[3dvh] sm:text-[2dvh] text-center font-bold mb-4">
         Wedding Categories
       </h1>
       <p className="text-lg text-center mb-8">

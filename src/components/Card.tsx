@@ -8,9 +8,9 @@ export function Card() {
       <div className="w-full">
         <img src="/img1.png" className="w-full h-full" />
       </div>
-      <div>
+      <div className="rounded-md cursor-pointer p-6 hover">
         <h1 className="text-center text-xl">Lorem ipsum</h1>
-        <p className="text-center ">
+        <p className={"text-center"}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit
         </p>
       </div>

@@ -46,7 +46,7 @@ export default function Hamburger() {
             </svg>
           </button>
           <div className="absolute top-4 right-20 text-white text-xl">
-            <img src="/logo.png" alt="Logo" className="h-36 w-60" />
+            <img src="/logo.png" alt="Logo" className="h-30 w-50" />
           </div>
           <div className="mt-auto mb-20 w-full flex flex-col items-center space-y-8 px-4">
             <a

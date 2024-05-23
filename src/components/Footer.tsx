@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <div className="w-full h-[10dvh]">
       <div className="bg-[#13362d] flex justify-between items-center p-5">
-        <div>
+        <div className="w-1/5">
           <h1>LOGO</h1>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -27,7 +27,7 @@ export function Footer() {
             </span>
           </div>
         </div>
-        <div className="p-5">
+        <div className="p-5 w-1/5">
           <div>Lorem ipsum</div>
           <div>Lorem ipsum</div>
           <div>Lorem ipsum</div>

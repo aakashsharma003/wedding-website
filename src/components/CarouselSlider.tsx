@@ -9,11 +9,11 @@ const CarouselSlider = () => {
   const sliderRef = useRef<SliderProps>(null); // Set the type of useRef to SliderProps
 
   const scrollLeft = () => {
-    sliderRef.current?.slickPrev();
+    sliderRef.current?.slickPrev(); // Use optional chaining
   };
 
   const scrollRight = () => {
-    sliderRef.current?.slickNext();
+    sliderRef.current?.slickNext(); // Use optional chaining
   };
 
   const settings = {
