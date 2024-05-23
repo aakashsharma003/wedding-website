@@ -6,14 +6,18 @@ import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import EastIcon from "@mui/icons-material/East";
 
 const CarouselSlider = () => {
-  const sliderRef = useRef<SliderProps>(null); // Set the type of useRef to SliderProps
+  const sliderRef = useRef<Slider | null>(null); // Set the type of useRef to SliderProps
 
   const scrollLeft = () => {
-    sliderRef.current?.slickPrev(); // Use optional chaining
+    if (sliderRef.current) {
+      sliderRef.current.slickPrev();
+    } // Use optional chaining
   };
 
   const scrollRight = () => {
-    sliderRef.current?.slickNext(); // Use optional chaining
+    if (sliderRef.current) {
+      sliderRef.current.slickNext();
+    }
   };
 
   const settings = {
