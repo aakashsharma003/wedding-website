@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import Slider, { SliderProps } from "react-slick"; // Import SliderProps from react-slick
+import Slider from "react-slick"; // Import SliderProps from react-slick
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
