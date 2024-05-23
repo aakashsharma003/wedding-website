@@ -35,7 +35,7 @@ export function Footer() {
           <div>Lorem ipsum</div>
           <div>Lorem ipsum</div>
         </div>
-        <div>
+        <div className="hidden md:block">
           <div>Lorem ipsum</div>
           <div>Lorem ipsum</div>
           <div>Lorem ipsum</div>
