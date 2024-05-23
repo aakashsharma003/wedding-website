@@ -1,12 +1,20 @@
 import React, { useRef } from "react";
-import Slider from "react-slick";
+import Slider, { SliderProps } from "react-slick"; // Import SliderProps from react-slick
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import EastIcon from "@mui/icons-material/East";
 
 const CarouselSlider = () => {
-  const sliderRef = useRef(null);
+  const sliderRef = useRef<SliderProps>(null); // Set the type of useRef to SliderProps
+
+  const scrollLeft = () => {
+    sliderRef.current?.slickPrev();
+  };
+
+  const scrollRight = () => {
+    sliderRef.current?.slickNext();
+  };
 
   const settings = {
     dots: false,
@@ -34,14 +42,6 @@ const CarouselSlider = () => {
         },
       },
     ],
-  };
-
-  const scrollLeft = () => {
-    sliderRef.current.slickPrev();
-  };
-
-  const scrollRight = () => {
-    sliderRef.current.slickNext();
   };
 
   return (
